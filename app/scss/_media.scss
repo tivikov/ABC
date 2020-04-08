@@ -1,0 +1,164 @@
+@import "vars";
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
+@include media-breakpoint-down(lg) {
+	
+}
+
+// ≥992px
+@include media-breakpoint-down(md) {
+  .medium-text {
+    font-size: 15px;
+  }
+  .section-title {
+    font-size: 24px;
+  }
+
+  .schedule-box_week__item-text span {
+    display: none;
+  }
+  .schedule-box_week__item-text .short {
+    display: block;
+  }
+
+  .container-box {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .schedule-box_number {
+    height: 22px;
+    width: 22px;
+    font-size: 14px;
+    transform: translateY(-11px);
+    left: 11px;
+  }
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+  .abc_left_bar {
+    overflow-y: auto;
+    height: 100vh;
+    transform: translateX(-100%);
+  }
+  .top-bar-mobile {
+    display: flex;
+  }
+
+  .top-bar-link {
+    display: none;
+  }
+  #abc_footer .footer_content {
+    justify-content: center;
+    
+  }
+  .footer_logo {
+    display: none;
+  }
+  .section-title {
+    font-size: 24px;
+  }
+  .section-subtitle {
+    font-size: 15px;
+  }
+  .timebox_big {
+    padding: 16px 30px;
+    font-size: 40px;
+    border-radius: 10px;
+  }
+  .big-link {
+    font-size: 15px;
+  }
+  .training-empty {
+    min-height: 70vh;
+  }
+  .top-bar {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .training {
+    padding: 20px 11px;
+  }
+  .training-top {
+    text-align: center;
+  }
+  
+
+  .hidden-mobile {
+    display: none;
+  }
+  .training {
+    text-align: center;
+  }
+
+  .schedule-steps-wrapper {
+    display: block;
+    position: relative;
+    .step-schedule {
+      position: absolute;
+      bottom: 5px;
+      &.next {
+        right: 0;
+      }
+    }
+    .step-schedule-title {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  .small-title {
+    font-size: 20px;
+  }
+  .small-subtitle {
+    font-size: 16px;
+  }
+
+  .schedule-box_week__item .schedule-box_week__item-name {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .schedule-box_week__item {
+    padding: 7px 11px;
+  }
+
+  .schedule-box_week {
+    height: 74px;
+  }
+}
+
+// ≥576px
+@include media-breakpoint-down(xs) {
+
+}
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
+@include media-breakpoint-up(sm) {
+
+}
+
+// ≤768px
+@include media-breakpoint-up(md) {
+  .hidden-desktop {
+    display: none;
+  }
+}
+
+// ≤992px
+@include media-breakpoint-up(lg) {
+
+
+}
+
+// ≤1200px
+@include media-breakpoint-up(xl) {
+	
+}

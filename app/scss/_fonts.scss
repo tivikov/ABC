@@ -1,0 +1,10 @@
+@import "_mixins/font-face";
+
+// @include font-face("roboto-example", "../fonts/RobotoRegular/RobotoRegular");
+@include font-face('Rubik', '../fonts/Rubik/Rubik-Regular');
+@include font-face('Rubik', '../fonts/Rubik/Rubik-Medium', 500);
+@include font-face('Rubik', '../fonts/Rubik/Rubik-Bold', bold);
+@include font-face('Rubik', '../fonts/Rubik/Rubik-Light', 200);
+@include font-face('Exo 2', '../fonts/Exo_2/Exo2-Regular');
+@include font-face('Exo 2', '../fonts/Exo_2/Exo2-Medium', 500);
+
