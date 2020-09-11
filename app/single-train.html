@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<!-- <base href="/"> -->
 
-	<title>OptimizedHTML 4</title>
+	<title>ABC - Верстка</title>
 	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -32,7 +32,7 @@
 		<div class="abc_left_bar" id="left-bar">
 			<div class="profile_info">
 				<div class="profile_info__image">
-					<img src="img/_src/user.png" alt="">
+					<img src="img/_src/user.svg" alt="">
 				</div>
 				<div class="profile_info__name"><span>Татьяна</span></div>
 				<div class="profile_info__level">
@@ -119,6 +119,17 @@
 					</a>
 				</li>
 			</ul>
+			<div class="bottom-mobile-menu">
+				<a href="#help" class="bottom-mobile-menu-item help">
+					<img src="img/_src/faq.svg" alt="">
+				</a>
+				<a href="#" class="bottom-mobile-menu-item">
+					<img src="img/_src/coin.svg" alt="">
+				</a>
+				<a href="#" class="bottom-mobile-menu-item">
+					<img src="img/_src/settings.svg" alt="">
+				</a>
+			</div>
 		</div>
 		<div class="top-bar">
 			<div class="top-bar-mobile">
@@ -128,17 +139,18 @@
 					<span></span>
 				</div>
 				<a href="#" class="logo">
-					<img src="img/_src/ABC_logo.png" alt="">
+					<img src="img/_src/ABC_logo.svg" alt="">
 				</a>
 			</div>
+			
 			<a href="#" class="top-bar-link">
-				<img src="img/_src/faq.png" alt="">
+				<img src="img/_src/coin.svg" alt="">
+			</a>
+			<a href="#help" class="top-bar-link help">
+				<img src="img/_src/faq.svg" alt="">
 			</a>
 			<a href="#" class="top-bar-link">
-				<img src="img/_src/coin.png" alt="">
-			</a>
-			<a href="#" class="top-bar-link">
-				<img src="img/_src/settings.png" alt="">
+				<img src="img/_src/settings.svg" alt="">
 			</a>
 		</div>
 	</header>
@@ -154,7 +166,7 @@
 							<h1 class="section-title">Тренировка</h1>
 						</div>
 						<div class="col-md-4 text-right order-md-3 hidden-mobile">
-						<a href="#">Перенести тренировку</a></div>
+						<a href="#over-train" class="open-default-popup">Перенести тренировку</a></div>
 					</div>
 				</div>
 			</div>
@@ -178,22 +190,38 @@
 					</span>
 				</label>
 			</div>
-			<a href="#" class="hidden-desktop">Перенести тренировку</a>
+			<a href="#over-train" class="hidden-desktop open-default-popup">Перенести тренировку</a>
 		</div>
 	</main>
-<footer id="abc_footer">
+<div id="over-train" class="default-popup mfp-hide light-shadow text-center">
+	<div class="popup-header">Перенести тренировку</div>
+	<div class="popup-content">
+		<div class="mid-text">Выберите новое время для тренировки:</div>
+		<div class="select-time-widget">
+			<input type="text" class="select-time__item-input" data-default="12:00" readonly="readonly" data-autoclose="true">
+		</div>
+		<div class="popup-notice-box light-shadow">
+			Перенести тренировку можно только 1 раз в день
+		</div>
+		
+		
+		<div class="button-wrapper text-center margin-20">
+			<a href="#" class="button button-rounded apply-close">Перенести</a>
+		</div>
+	</div>
+</div><!-- <footer id="abc_footer">
   <div class="footer_content">
     <a href="#" class="footer_logo logo">
-      <img src="img/_src/ABC_logo.png" alt="" class="logo_image">
+      <img src="img/_src/ABC_logo.svg" alt="" class="logo_image">
       <span>ART OF BODY CONTROL</span>
     </a>
     <div class="footer_social">
-      <a href="#"><img src="img/_src/instagram.png" alt="" class="img-responsive"></a>
-      <a href="#"><img src="img/_src/facebook.png" alt="" class="img-responsive"></a>
-      <a href="#"><img src="img/_src/youtube.png" alt="" class="img-responsive"></a>
+      <a href="#"><img src="img/_src/instagram.svg" alt="" class="img-responsive"></a>
+      <a href="#"><img src="img/_src/facebook.svg" alt="" class="img-responsive"></a>
+      <a href="#"><img src="img/_src/youtube.svg" alt="" class="img-responsive"></a>
     </div>
   </div>
-</footer>
+</footer> -->
 <script src="js/scripts.min.js"></script>
 
 </body>

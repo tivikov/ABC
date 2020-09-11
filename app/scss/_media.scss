@@ -35,12 +35,15 @@
     transform: translateY(-11px);
     left: 11px;
   }
+  .testing-main .testing-content {
+    padding-top: 30px;
+  }
 }
 
 // ≥768px
 @include media-breakpoint-down(sm) {
   .abc_left_bar {
-    overflow-y: auto;
+    
     height: 100vh;
     transform: translateX(-100%);
   }
@@ -130,6 +133,17 @@
   .schedule-box_week {
     height: 74px;
   }
+  .footnote {
+    display: block;
+  }
+  .navigate-schedule-wrapper {
+    margin-top: 30px;
+  }
+  .navigate-schedule-item {
+    width: 202px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 // ≥576px
@@ -150,6 +164,11 @@
   .hidden-desktop {
     display: none;
   }
+  .bottom-mobile-menu {
+    display: none;
+  }
+
+  
 }
 
 // ≤992px
@@ -161,4 +180,45 @@
 // ≤1200px
 @include media-breakpoint-up(xl) {
 	
+}
+
+
+@media only screen and (max-height: 812px) {
+  .profile_info {
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  .left_bar_menu {
+	
+    margin-top: 20px;
+    &__item {
+      
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+      
+      &-link {
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        svg {
+          width: 30px;
+          height: 30px;
+        }
+        &:hover, &.active {
+          svg path {
+           
+          }
+          .left_bar_menu__item-text {
+            
+          }
+        }
+      }
+      &-text {
+        margin-top: 0;
+        margin-left: 15px;
+      }
+    }
+  }
 }

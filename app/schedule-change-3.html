@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>ABC - Верстка</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body class="default-template">
+
+	<header class="abc-header">
+		<div class="abc_left_bar" id="left-bar">
+			<div class="profile_info">
+				<div class="profile_info__image">
+					<img src="img/_src/user.svg" alt="">
+				</div>
+				<div class="profile_info__name"><span>Татьяна</span></div>
+				<div class="profile_info__level">
+					Level: <span>B2</span>
+				</div>
+			</div>
+			<div class="profile-task">
+				<p>Тренировки: <strong>10</strong></p>
+				<p>Задания: <strong>10</strong></p>
+			</div>
+			<ul class="left_bar_menu">
+				<li class="left_bar_menu__item">
+					<a href="#" class="left_bar_menu__item-link active">
+						<div class="left_bar_menu__item-icon">
+							<svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0)">
+								<path d="M39.6267 17.2538L39.2917 17.2501C34.6199 17.2501 30.4167 19.8616 28.2791 23.9511C26.9346 23.3447 25.4766 23 23.9586 23C21.4509 23 19.0925 23.8941 17.2254 25.4513C17.1894 23.805 16.9749 22.1655 16.7657 20.709C16.5865 19.4637 16.4145 18.2554 16.4033 17.2492L21.2485 17.2501C22.0159 17.2501 22.7383 16.9506 23.2811 16.4078L27.1144 12.5745C28.2101 11.4789 28.2176 9.72155 27.1717 8.59547C27.537 8.04797 27.7111 7.39221 27.6441 6.72262C27.559 5.86256 27.0976 5.09333 26.3779 4.61412L24.0513 3.06344C22.9274 2.3138 21.6182 1.91705 20.2658 1.91705C17.4471 1.91705 14.7976 3.01483 12.8043 5.00816C9.13279 8.67947 6.24382 12.8834 4.21492 17.5037C1.77049 23.0701 0.531387 27.1767 0.531387 29.7082C0.531387 31.1588 0.405967 32.337 0.158003 33.2111C-0.371707 35.0782 0.462119 37.0697 2.18511 38.0542C9.08706 41.9979 16.937 44.0829 24.8862 44.0829H26.2722C31.1995 44.0829 36.0677 43.2931 40.7424 41.7349L41.4134 41.5103C44.1564 40.5969 46.0001 38.0393 46.0001 35.1474V23.9667C46 20.3581 43.1409 17.3465 39.6267 17.2538ZM44.0833 35.1474C44.0833 37.2129 42.7666 39.0397 40.8059 39.6929L40.1349 39.9175C35.6578 41.4092 30.9935 42.1663 26.2721 42.1663H24.8861C17.2701 42.1663 9.74856 40.1692 3.13582 36.3902C2.17936 35.8437 1.71335 34.7515 2.00156 33.7342C2.29822 32.6907 2.44799 31.3356 2.44799 29.7081C2.44799 27.4752 3.66553 23.5221 5.97052 18.2748C7.90213 13.8725 10.6573 9.86521 14.1593 6.36325C15.7905 4.73208 17.9589 3.83366 20.2658 3.83366C21.2381 3.83366 22.1796 4.11908 22.9882 4.65814L25.3147 6.20881C25.5552 6.36882 25.7087 6.62523 25.7368 6.91165C25.7658 7.19896 25.6647 7.47972 25.4616 7.68375L22.4004 10.7449C22.0728 11.0725 21.574 11.153 21.1604 10.9462C20.8478 10.7899 20.6364 10.5026 20.5802 10.1573C20.5241 9.81202 20.6336 9.47224 20.8806 9.22517L21.7613 8.34454C22.1356 7.97017 22.1356 7.36373 21.7613 6.98945C21.3869 6.61508 20.7805 6.61508 20.4062 6.98945L19.5255 7.87008C18.8377 8.55792 18.5316 9.50413 18.688 10.4652C18.8443 11.4254 19.4329 12.2255 20.3032 12.6607C21.4544 13.2354 22.844 13.0127 23.7556 12.1001L25.8518 10.0039C26.1108 10.3771 26.0915 10.8873 25.7592 11.2195L21.926 15.0528C21.7472 15.2316 21.5001 15.3335 21.2484 15.3335L16.7736 15.3328C16.8337 15.2334 16.8914 15.131 16.9696 15.0528C17.344 14.6784 17.344 14.072 16.9696 13.6977C16.5953 13.3233 15.9888 13.3233 15.6145 13.6977C14.047 15.2653 14.4279 17.9147 14.8687 20.9824C15.097 22.5752 15.3338 24.2223 15.3338 25.875C15.3338 29.8225 12.3465 30.6629 12.2192 30.6966C11.7101 30.8285 11.4013 31.346 11.5295 31.857C11.638 32.2931 12.0283 32.5832 12.4578 32.5832C12.5346 32.5832 12.6132 32.5739 12.6909 32.5542C13.8384 32.2675 15.7188 31.1663 16.6641 28.9076C16.6771 28.8902 16.6983 28.8836 16.7104 28.865C18.3089 26.3925 21.0182 24.9166 23.9586 24.9166C26.2477 24.9166 28.4039 25.8038 30.0295 27.4154C30.4058 27.7879 31.0131 27.786 31.3846 27.4098C31.7571 27.0335 31.7552 26.4271 31.379 26.0547C30.9356 25.6151 30.4495 25.236 29.947 24.8868C31.7482 21.3977 35.3198 19.1667 39.2916 19.1667L39.5752 19.1705C42.0608 19.236 44.0832 21.3876 44.0832 23.9667V35.1474H44.0833Z" fill="#0451A5"/>
+								</g>
+								<defs>
+								<clipPath id="clip0">
+								<rect width="46" height="46" fill="white"/>
+								</clipPath>
+								</defs>
+								</svg>
+						</div>
+						<div class="left_bar_menu__item-text">Тренировка</div>
+					</a>
+				</li>
+				<li class="left_bar_menu__item">
+					<a href="#" class="left_bar_menu__item-link">
+						<div class="left_bar_menu__item-icon">
+							<svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M41.5078 3.95312H37.2252V2.69531C37.2252 1.20912 36.0161 0 34.5299 0C33.0437 0 31.8346 1.20912 31.8346 2.69531V3.95312H16.7409V2.69531C16.7409 1.20912 15.5317 0 14.0455 0C12.5593 0 11.3502 1.20912 11.3502 2.69531V3.98637C11.2739 3.96525 11.1938 3.95312 11.1107 3.95312H7.53097C5.05398 3.95312 3.03879 5.96832 3.03879 8.44531V23.7487C3.03879 24.2449 3.44111 24.6471 3.93722 24.6471C4.43334 24.6471 4.83566 24.2449 4.83566 23.7487V13.207H37.2252C37.7213 13.207 38.1237 12.8048 38.1237 12.3086C38.1237 11.8124 37.7213 11.4102 37.2252 11.4102H4.83566V8.44531C4.83566 6.95912 6.04478 5.75 7.53097 5.75H11.1107C11.1938 5.75 11.2739 5.73778 11.3502 5.71676V6.87305C11.3502 8.35924 12.5593 9.56836 14.0455 9.56836C15.5317 9.56836 16.7409 8.35924 16.7409 6.87305V5.75H31.8346V6.87305C31.8346 8.35924 33.0437 9.56836 34.5299 9.56836C36.0161 9.56836 37.2252 8.35924 37.2252 6.87305V5.75H41.5078C42.994 5.75 44.2031 6.95912 44.2031 8.44531V42.5854C44.2031 43.4774 43.4775 44.2031 42.5854 44.2031C41.6933 44.2031 40.9677 43.4774 40.9677 42.5854V40.2612C40.9677 39.765 40.5654 39.3628 40.0692 39.3628H29.6185C29.1224 39.3628 28.7201 39.765 28.7201 40.2612C28.7201 40.7574 29.1224 41.1597 29.6185 41.1597H39.1708V42.5854C39.1708 43.1704 39.3189 43.7213 39.5791 44.2031H3.41406C2.52236 44.2031 1.79688 43.4776 1.79688 42.5859V41.1597H21.9062C22.4023 41.1597 22.8046 40.7574 22.8046 40.2612C22.8046 39.765 22.4023 39.3628 21.9062 39.3628H12.9293C14.4993 38.0107 15.4962 36.0108 15.4962 33.7812C15.4962 29.719 12.1913 26.4141 8.12897 26.4141C4.06669 26.4141 0.761785 29.719 0.761785 33.7812C0.761785 36.0108 1.75869 38.0107 3.32862 39.3628H0.898438C0.40232 39.3628 0 39.765 0 40.2612V42.5859C0 44.4684 1.53157 46 3.41406 46H42.5854C44.4682 46 46 44.4683 46 42.5854V8.44531C46 5.96832 43.9848 3.95312 41.5078 3.95312ZM14.944 6.87305C14.944 7.36845 14.5409 7.77148 14.0455 7.77148C13.5501 7.77148 13.1471 7.36845 13.1471 6.87305V2.69531C13.1471 2.19991 13.5501 1.79688 14.0455 1.79688C14.5409 1.79688 14.944 2.19991 14.944 2.69531V6.87305ZM35.4284 6.87305C35.4284 7.36845 35.0253 7.77148 34.5299 7.77148C34.0345 7.77148 33.6315 7.36845 33.6315 6.87305V2.69531C33.6315 2.19991 34.0345 1.79688 34.5299 1.79688C35.0253 1.79688 35.4284 2.19991 35.4284 2.69531V6.87305ZM2.55866 33.7812C2.55866 30.7098 5.05748 28.2109 8.12897 28.2109C11.2005 28.2109 13.6993 30.7098 13.6993 33.7812C13.6993 36.8527 11.2005 39.3516 8.12897 39.3516C5.05748 39.3516 2.55866 36.8527 2.55866 33.7812Z" fill="#0451A5"/>
+								<path d="M42.0747 11.6734C41.9077 11.5063 41.6759 11.4102 41.4396 11.4102C41.2032 11.4102 40.9715 11.5063 40.8044 11.6734C40.6373 11.8405 40.5411 12.0723 40.5411 12.3086C40.5411 12.5449 40.6372 12.7767 40.8044 12.9438C40.9716 13.1109 41.2032 13.207 41.4396 13.207C41.6759 13.207 41.9077 13.1109 42.0747 12.9438C42.2418 12.7767 42.338 12.5449 42.338 12.3086C42.338 12.0723 42.2419 11.8405 42.0747 11.6734Z" fill="#0451A5"/>
+								<path d="M26.8318 39.6256C26.6647 39.4585 26.4329 39.3632 26.1967 39.3632C25.9604 39.3632 25.7286 39.4585 25.5615 39.6256C25.3944 39.7936 25.2982 40.0245 25.2982 40.2608C25.2982 40.498 25.3943 40.7289 25.5615 40.8969C25.7286 41.064 25.9604 41.1592 26.1967 41.1592C26.4329 41.1592 26.6647 41.064 26.8318 40.8969C26.9989 40.7289 27.0951 40.4971 27.0951 40.2608C27.0951 40.0245 26.999 39.7936 26.8318 39.6256Z" fill="#0451A5"/>
+								<path d="M20.3267 27.3125C18.4442 27.3125 16.9126 28.8441 16.9126 30.7266C16.9126 32.6091 18.4442 34.1406 20.3267 34.1406C22.2092 34.1406 23.7407 32.6091 23.7407 30.7266C23.7407 28.8441 22.2092 27.3125 20.3267 27.3125ZM20.3267 32.3438C19.435 32.3438 18.7095 31.6183 18.7095 30.7266C18.7095 29.8349 19.435 29.1094 20.3267 29.1094C21.2184 29.1094 21.9438 29.8349 21.9438 30.7266C21.9438 31.6183 21.2184 32.3438 20.3267 32.3438Z" fill="#0451A5"/>
+								<path d="M28.712 27.3125C26.8295 27.3125 25.298 28.8441 25.298 30.7266C25.298 32.6091 26.8295 34.1406 28.712 34.1406C30.5945 34.1406 32.1261 32.6091 32.1261 30.7266C32.1261 28.8441 30.5945 27.3125 28.712 27.3125ZM28.712 32.3438C27.8203 32.3438 27.0948 31.6183 27.0948 30.7266C27.0948 29.8349 27.8203 29.1094 28.712 29.1094C29.6037 29.1094 30.3292 29.8349 30.3292 30.7266C30.3292 31.6183 29.6037 32.3438 28.712 32.3438Z" fill="#0451A5"/>
+								<path d="M37.0975 27.3125C35.215 27.3125 33.6835 28.8441 33.6835 30.7266C33.6835 32.6091 35.215 34.1406 37.0975 34.1406C38.98 34.1406 40.5116 32.6091 40.5116 30.7266C40.5116 28.8441 38.98 27.3125 37.0975 27.3125ZM37.0975 32.3438C36.2058 32.3438 35.4803 31.6183 35.4803 30.7266C35.4803 29.8349 36.2058 29.1094 37.0975 29.1094C37.9892 29.1094 38.7147 29.8349 38.7147 30.7266C38.7147 31.6183 37.9892 32.3438 37.0975 32.3438Z" fill="#0451A5"/>
+								<path d="M11.9413 17.9688C10.0588 17.9688 8.52722 19.5003 8.52722 21.3828C8.52722 23.2653 10.0588 24.7969 11.9413 24.7969C13.8238 24.7969 15.3553 23.2653 15.3553 21.3828C15.3553 19.5003 13.8238 17.9688 11.9413 17.9688ZM11.9413 23C11.0496 23 10.3241 22.2745 10.3241 21.3828C10.3241 20.4911 11.0496 19.7656 11.9413 19.7656C12.833 19.7656 13.5585 20.4911 13.5585 21.3828C13.5585 22.2745 12.833 23 11.9413 23Z" fill="#0451A5"/>
+								<path d="M28.712 17.9688C26.8295 17.9688 25.298 19.5003 25.298 21.3828C25.298 23.2653 26.8295 24.7969 28.712 24.7969C30.5945 24.7969 32.1261 23.2653 32.1261 21.3828C32.1261 19.5003 30.5945 17.9688 28.712 17.9688ZM28.712 23C27.8203 23 27.0948 22.2745 27.0948 21.3828C27.0948 20.4911 27.8203 19.7656 28.712 19.7656C29.6037 19.7656 30.3292 20.4911 30.3292 21.3828C30.3292 22.2745 29.6037 23 28.712 23Z" fill="#0451A5"/>
+								<path d="M37.0975 17.9688C35.215 17.9688 33.6835 19.5003 33.6835 21.3828C33.6835 23.2653 35.215 24.7969 37.0975 24.7969C38.98 24.7969 40.5116 23.2653 40.5116 21.3828C40.5116 19.5003 38.98 17.9688 37.0975 17.9688ZM37.0975 23C36.2058 23 35.4803 22.2745 35.4803 21.3828C35.4803 20.4911 36.2058 19.7656 37.0975 19.7656C37.9892 19.7656 38.7147 20.4911 38.7147 21.3828C38.7147 22.2745 37.9892 23 37.0975 23Z" fill="#0451A5"/>
+								<path d="M20.3267 17.9688C18.4442 17.9688 16.9126 19.5003 16.9126 21.3828C16.9126 23.2653 18.4442 24.7969 20.3267 24.7969C22.2092 24.7969 23.7407 23.2653 23.7407 21.3828C23.7407 19.5003 22.2092 17.9688 20.3267 17.9688ZM20.3267 23C19.435 23 18.7095 22.2745 18.7095 21.3828C18.7095 20.4911 19.435 19.7656 20.3267 19.7656C21.2184 19.7656 21.9438 20.4911 21.9438 21.3828C21.9438 22.2745 21.2184 23 20.3267 23Z" fill="#0451A5"/>
+								<path d="M11.3297 31.5917C10.9787 31.2408 10.41 31.2408 10.059 31.5917L7.13315 34.5176L6.13328 33.5177C5.78235 33.1669 5.21364 33.1669 4.86262 33.5177C4.51178 33.8686 4.51178 34.4375 4.86262 34.7884L6.49786 36.4235C6.66641 36.5919 6.89488 36.6866 7.13315 36.6866C7.37141 36.6866 7.59989 36.5919 7.76843 36.4235L11.3297 32.8622C11.6805 32.5114 11.6805 31.9425 11.3297 31.5917Z" fill="#0451A5"/>
+								</svg>
+								
+						</div>
+						<div class="left_bar_menu__item-text">Расписание</div>
+					</a>
+				</li>
+				<li class="left_bar_menu__item">
+					<a href="#" class="left_bar_menu__item-link">
+						<div class="left_bar_menu__item-icon">
+							<svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M28.9776 22.3306L20.2534 16.7789C20.0091 16.6242 19.6998 16.6139 19.4453 16.7527C19.1923 16.8923 19.0344 17.1588 19.0344 17.4483V28.5517C19.0344 28.8412 19.1923 29.1077 19.446 29.2473C19.565 29.3123 19.6959 29.3448 19.8275 29.3448C19.9758 29.3448 20.1241 29.3028 20.2534 29.2211L28.9776 23.6694C29.206 23.5234 29.3448 23.2712 29.3448 23C29.3448 22.7288 29.206 22.4766 28.9776 22.3306ZM20.6206 27.1075V18.8925L27.0741 23L20.6206 27.1075Z" fill="#0451A5"/>
+								<path d="M45.2069 4.75862H37.2759H8.72414H0.793103C0.35531 4.75862 0 5.11314 0 5.55172V14.2759V23V31.7241V40.4483C0 40.8869 0.35531 41.2414 0.793103 41.2414H8.72414H37.2759H45.2069C45.6447 41.2414 46 40.8869 46 40.4483V31.7241V23V14.2759V5.55172C46 5.11314 45.6447 4.75862 45.2069 4.75862ZM7.93103 22.2069H1.58621V15.069H7.93103V22.2069ZM1.58621 23.7931H7.93103V30.931H1.58621V23.7931ZM9.51724 31.7241V23V14.2759V6.34483H36.4828V14.2759V23V31.7241V39.6552H9.51724V31.7241ZM44.4138 22.2069H38.069V15.069H44.4138V22.2069ZM38.069 23.7931H44.4138V30.931H38.069V23.7931ZM44.4138 6.34483V13.4828H38.069V6.34483H44.4138ZM1.58621 6.34483H7.93103V13.4828H1.58621V6.34483ZM1.58621 39.6552V32.5172H7.93103V39.6552H1.58621ZM44.4138 39.6552H38.069V32.5172H44.4138V39.6552Z" fill="#0451A5"/>
+								</svg>
+								
+						</div>
+						<div class="left_bar_menu__item-text">Библиотека</div>
+					</a>
+				</li>
+				<li class="left_bar_menu__item">
+					<a href="#" class="left_bar_menu__item-link">
+						<div class="left_bar_menu__item-icon">
+							<svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M40.408 7.12387L33.5095 0.2254C33.3707 0.0858667 33.1791 0 32.9667 0H9.20003C7.08633 0 5.3667 1.71963 5.3667 3.83333V42.1667C5.3667 44.2804 7.08633 46 9.20003 46H36.8C38.9137 46 40.6334 44.2804 40.6334 42.1667V7.66667C40.6334 7.4543 40.5475 7.26263 40.408 7.12387ZM33.7334 2.6174L38.016 6.9H33.7334V2.6174ZM39.1 42.1667C39.1 43.4347 38.0681 44.4667 36.8 44.4667H9.20003C7.93197 44.4667 6.90003 43.4347 6.90003 42.1667V3.83333C6.90003 2.56527 7.93197 1.53333 9.20003 1.53333H32.2V7.66667C32.2 8.09063 32.5435 8.43333 32.9667 8.43333H39.1V42.1667Z" fill="#0451A5"/>
+								<path d="M12.2666 10.7333C10.5754 10.7333 9.19995 12.1087 9.19995 13.8C9.19995 15.4913 10.5754 16.8667 12.2666 16.8667C13.9579 16.8667 15.3333 15.4913 15.3333 13.8C15.3333 12.1087 13.9579 10.7333 12.2666 10.7333ZM12.2666 15.3333C11.421 15.3333 10.7333 14.6456 10.7333 13.8C10.7333 12.9544 11.421 12.2667 12.2666 12.2667C13.1123 12.2667 13.8 12.9544 13.8 13.8C13.8 14.6456 13.1123 15.3333 12.2666 15.3333Z" fill="#0451A5"/>
+								<path d="M12.2666 19.1667C10.5754 19.1667 9.19995 20.5421 9.19995 22.2333C9.19995 23.9246 10.5754 25.3 12.2666 25.3C13.9579 25.3 15.3333 23.9246 15.3333 22.2333C15.3333 20.5421 13.9579 19.1667 12.2666 19.1667ZM12.2666 23.7667C11.421 23.7667 10.7333 23.079 10.7333 22.2333C10.7333 21.3877 11.421 20.7 12.2666 20.7C13.1123 20.7 13.8 21.3877 13.8 22.2333C13.8 23.079 13.1123 23.7667 12.2666 23.7667Z" fill="#0451A5"/>
+								<path d="M12.2666 27.6C10.5754 27.6 9.19995 28.9754 9.19995 30.6667C9.19995 32.3579 10.5754 33.7333 12.2666 33.7333C13.9579 33.7333 15.3333 32.3579 15.3333 30.6667C15.3333 28.9754 13.9579 27.6 12.2666 27.6ZM12.2666 32.2C11.421 32.2 10.7333 31.5123 10.7333 30.6667C10.7333 29.821 11.421 29.1333 12.2666 29.1333C13.1123 29.1333 13.8 29.821 13.8 30.6667C13.8 31.5123 13.1123 32.2 12.2666 32.2Z" fill="#0451A5"/>
+								<path d="M12.2666 36.0333C10.5754 36.0333 9.19995 37.4087 9.19995 39.1C9.19995 40.7913 10.5754 42.1667 12.2666 42.1667C13.9579 42.1667 15.3333 40.7913 15.3333 39.1C15.3333 37.4087 13.9579 36.0333 12.2666 36.0333ZM12.2666 40.6333C11.421 40.6333 10.7333 39.9456 10.7333 39.1C10.7333 38.2544 11.421 37.5667 12.2666 37.5667C13.1123 37.5667 13.8 38.2544 13.8 39.1C13.8 39.9456 13.1123 40.6333 12.2666 40.6333Z" fill="#0451A5"/>
+								<path d="M36.8 14.5667H16.8667V16.1H36.8V14.5667Z" fill="#0451A5"/>
+								<path d="M28.3666 3.83333H17.6333V5.36666H28.3666V3.83333Z" fill="#0451A5"/>
+								<path d="M30.6667 6.89999H15.3334V8.43333H30.6667V6.89999Z" fill="#0451A5"/>
+								<path d="M36.8 23H16.8667V24.5333H36.8V23Z" fill="#0451A5"/>
+								<path d="M36.8 31.4333H16.8667V32.9667H36.8V31.4333Z" fill="#0451A5"/>
+								<path d="M36.8 39.8667H16.8667V41.4H36.8V39.8667Z" fill="#0451A5"/>
+								<path d="M24.5333 11.5H23V13.0333H24.5333V11.5Z" fill="#0451A5"/>
+								<path d="M21.4667 11.5H19.9333V13.0333H21.4667V11.5Z" fill="#0451A5"/>
+								<path d="M18.4 11.5H16.8667V13.0333H18.4V11.5Z" fill="#0451A5"/>
+								</svg>								
+								
+						</div>
+						<div class="left_bar_menu__item-text">Skills chart</div>
+					</a>
+				</li>
+			</ul>
+			<div class="bottom-mobile-menu">
+				<a href="#help" class="bottom-mobile-menu-item help">
+					<img src="img/_src/faq.svg" alt="">
+				</a>
+				<a href="#" class="bottom-mobile-menu-item">
+					<img src="img/_src/coin.svg" alt="">
+				</a>
+				<a href="#" class="bottom-mobile-menu-item">
+					<img src="img/_src/settings.svg" alt="">
+				</a>
+			</div>
+		</div>
+		<div class="top-bar">
+			<div class="top-bar-mobile">
+				<div id="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<a href="#" class="logo">
+					<img src="img/_src/ABC_logo.svg" alt="">
+				</a>
+			</div>
+			
+			<a href="#" class="top-bar-link">
+				<img src="img/_src/coin.svg" alt="">
+			</a>
+			<a href="#help" class="top-bar-link help">
+				<img src="img/_src/faq.svg" alt="">
+			</a>
+			<a href="#" class="top-bar-link">
+				<img src="img/_src/settings.svg" alt="">
+			</a>
+		</div>
+	</header>
+<main class="page-content">
+	<div class="container-fluid container-box">
+		<div class="progress-bar" data-step="3">
+			<div class="step"></div>
+			<div class="step"></div>
+			<div class="step"></div>
+			<div class="step"></div>
+			<div class="colored-line"></div>
+		</div>
+		<section class="schedule text-center">
+			<div class="schedule-steps-wrapper">
+				<div class="prev step-schedule">
+					<a href="#"><svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M6.4955 0.191807L6.8913 0.584883C7.01491 0.708591 7.08301 0.873178 7.08301 1.04908C7.08301 1.22489 7.01491 1.38967 6.8913 1.51338L2.40717 5.99732L6.89628 10.4864C7.01989 10.6099 7.08789 10.7747 7.08789 10.9505C7.08789 11.1263 7.01989 11.2912 6.89628 11.4148L6.50291 11.808C6.2471 12.064 5.83042 12.064 5.57461 11.808L0.210567 6.46317C0.0870533 6.33966 2.81334e-05 6.17507 2.81334e-05 5.99771V5.99566C2.81334e-05 5.81975 0.0871511 5.65517 0.210567 5.53165L5.56007 0.191807C5.68359 0.0680981 5.85315 0.00019455 6.02896 0C6.20486 0 6.37208 0.0680981 6.4955 0.191807Z" fill="#2D527C"/>
+						</svg>
+						 Назад</a>	
+				</div>
+				<div class="step-schedule-title">
+					<h2 class="section-title small-title">Выберите выходной и дни заданий</h1>
+					<h4 class="section-subtitle small-subtitle"></h4>
+					<p class="step-current">Шаг 3</p>
+				</div>
+				<!-- <div class="next step-schedule">
+					<a href="#"><img src="img/_src/arrow-right.svg" alt="" class="img-responsive"></a>
+				</div> -->
+			</div>
+				
+		</section>
+		<form class="select-week-form">
+			<input type="radio" name="schedule-week" value="1">
+			<label for="">1</label>
+			<input type="radio" name="schedule-week" value="2">
+			<label for="">2</label>
+			<input type="radio" name="schedule-week" value="3">
+			<label for="">3</label>
+			<input type="radio" name="schedule-week" value="4">
+			<label for="">4</label>
+		
+		</form>
+		<section class="schedule-boxes">
+			<div class="schedule-box schedule-box--rest">
+				<div class="schedule-box_number">
+					1
+				</div>
+				<div class="schedule-box_week schedule-rest" data-days="1,3,5" data-rest="2">
+					<div class="schedule-box_week__item">
+						<div class="schedule-box_week__item-name">Пн</div>
+						<div class="schedule-box_week__item-text"><span>Тренировка</span><span class="short">Т</span></div>
+					</div>
+					<div class="schedule-box_week__item">
+						<div class="schedule-box_week__item-name">Вт</div>
+						<div class="schedule-box_week__item-text"><span>Тренировка</span><span class="short">Т</span></div>
+					</div>
+					<div class="schedule-box_week__item">
+						<div class="schedule-box_week__item-name">Ср</div>
+						<div class="schedule-box_week__item-text"><span>Тренировка</span><span class="short">Т</span></div>
+					</div>
+					<div class="schedule-box_week__item">
+						<div class="schedule-box_week__item-name">Чт</div>
+						<div class="schedule-box_week__item-text"><span>Тренировка</span><span class="short">Т</span></div>
+					</div>
+					<div class="schedule-box_week__item">
+						<div class="schedule-box_week__item-name">Пт</div>
+						<div class="schedule-box_week__item-text"><span>Тренировка</span><span class="short">Т</span></div>
+					</div>
+					<div class="schedule-box_week__item">
+						<div class="schedule-box_week__item-name">Сб</div>
+						<div class="schedule-box_week__item-text"><span>Тренировка</span><span class="short">Т</span></div>
+					</div>
+					<div class="schedule-box_week__item">
+						<div class="schedule-box_week__item-name">Вс</div>
+						<div class="schedule-box_week__item-text"><span>Тренировка</span><span class="short">Т</span></div>
+					</div>
+				</div>
+			</div>
+			<div class="schedule-box schedule-box--rest">
+				<div class="schedule-box_number">
+					2
+				</div>
+				<div class="schedule-box_week schedule-rest" data-days="1,3,5" data-rest="4">
+					<div class="schedule-box_week__item">
+						<div class="schedule-box_week__item-name">Пн</div>
+						<div class="schedule-box_week__item-text"><span>Тренировка</span><span class="short">Т</span></div>
+					</div>
+					<div class="schedule-box_week__item">
+						<div class="schedule-box_week__item-name">Вт</div>
+						<div class="schedule-box_week__item-text"><span>Тренировка</span><span class="short">Т</span></div>
+					</div>
+					<div class="schedule-box_week__item">
+						<div class="schedule-box_week__item-name">Ср</div>
+						<div class="schedule-box_week__item-text"><span>Тренировка</span><span class="short">Т</span></div>
+					</div>
+					<div class="schedule-box_week__item">
+						<div class="schedule-box_week__item-name">Чт</div>
+						<div class="schedule-box_week__item-text"><span>Тренировка</span><span class="short">Т</span></div>
+					</div>
+					<div class="schedule-box_week__item">
+						<div class="schedule-box_week__item-name">Пт</div>
+						<div class="schedule-box_week__item-text"><span>Тренировка</span><span class="short">Т</span></div>
+					</div>
+					<div class="schedule-box_week__item">
+						<div class="schedule-box_week__item-name">Сб</div>
+						<div class="schedule-box_week__item-text"><span>Тренировка</span><span class="short">Т</span></div>
+					</div>
+					<div class="schedule-box_week__item">
+						<div class="schedule-box_week__item-name">Вс</div>
+						<div class="schedule-box_week__item-text"><span>Тренировка</span><span class="short">Т</span></div>
+					</div>
+				</div>
+			</div>
+			<div class="schedule-box schedule-box--rest">
+				<div class="schedule-box_number">
+					3
+				</div>
+				<div class="schedule-box_week schedule-rest" data-days="1,3,5" data-rest="6">
+					<div class="schedule-box_week__item">
+						<div class="schedule-box_week__item-name">Пн</div>
+						<div class="schedule-box_week__item-text"><span>Тренировка</span><span class="short">Т</span></div>
+					</div>
+					<div class="schedule-box_week__item">
+						<div class="schedule-box_week__item-name">Вт</div>
+						<div class="schedule-box_week__item-text"><span>Тренировка</span><span class="short">Т</span></div>
+					</div>
+					<div class="schedule-box_week__item">
+						<div class="schedule-box_week__item-name">Ср</div>
+						<div class="schedule-box_week__item-text"><span>Тренировка</span><span class="short">Т</span></div>
+					</div>
+					<div class="schedule-box_week__item">
+						<div class="schedule-box_week__item-name">Чт</div>
+						<div class="schedule-box_week__item-text"><span>Тренировка</span><span class="short">Т</span></div>
+					</div>
+					<div class="schedule-box_week__item">
+						<div class="schedule-box_week__item-name">Пт</div>
+						<div class="schedule-box_week__item-text"><span>Тренировка</span><span class="short">Т</span></div>
+					</div>
+					<div class="schedule-box_week__item">
+						<div class="schedule-box_week__item-name">Сб</div>
+						<div class="schedule-box_week__item-text"><span>Тренировка</span><span class="short">Т</span></div>
+					</div>
+					<div class="schedule-box_week__item">
+						<div class="schedule-box_week__item-name">Вс</div>
+						<div class="schedule-box_week__item-text"><span>Тренировка</span><span class="short">Т</span></div>
+					</div>
+				</div>
+			</div>
+			<div class="schedule-box schedule-box--rest">
+				<div class="schedule-box_number">
+					4
+				</div>
+				<div class="schedule-box_week schedule-rest" data-days="1,3,5" data-rest="7">
+					<div class="schedule-box_week__item">
+						<div class="schedule-box_week__item-name">Пн</div>
+						<div class="schedule-box_week__item-text"><span>Тренировка</span><span class="short">Т</span></div>
+					</div>
+					<div class="schedule-box_week__item">
+						<div class="schedule-box_week__item-name">Вт</div>
+						<div class="schedule-box_week__item-text"><span>Тренировка</span><span class="short">Т</span></div>
+					</div>
+					<div class="schedule-box_week__item">
+						<div class="schedule-box_week__item-name">Ср</div>
+						<div class="schedule-box_week__item-text"><span>Тренировка</span><span class="short">Т</span></div>
+					</div>
+					<div class="schedule-box_week__item">
+						<div class="schedule-box_week__item-name">Чт</div>
+						<div class="schedule-box_week__item-text"><span>Тренировка</span><span class="short">Т</span></div>
+					</div>
+					<div class="schedule-box_week__item">
+						<div class="schedule-box_week__item-name">Пт</div>
+						<div class="schedule-box_week__item-text"><span>Тренировка</span><span class="short">Т</span></div>
+					</div>
+					<div class="schedule-box_week__item">
+						<div class="schedule-box_week__item-name">Сб</div>
+						<div class="schedule-box_week__item-text"><span>Тренировка</span><span class="short">Т</span></div>
+					</div>
+					<div class="schedule-box_week__item">
+						<div class="schedule-box_week__item-name">Вс</div>
+						<div class="schedule-box_week__item-text"><span>Тренировка</span><span class="short">Т</span></div>
+					</div>
+				</div>
+			</div>
+			<p class="footnote">З - Задание В - Выходной Т - Тренировка</p>
+		</section>
+		
+	</div>
+	
+</main>
+<div id="help" class="mfp-hide help-popup">
+	<div class="help-popup-wrapper">
+		<div class="help-header">
+			<div class="help-header-breadcrumb">
+				<div class="help-header-breadcrumb-item">Тестирование</div>
+				<div class="help-header-breadcrumb-item active">Выбор <br/>
+					расписания</div>
+				<div class="help-header-breadcrumb-item">Тренировки</div>
+			</div>
+		</div>
+		<div class="help-content">
+			<div class="help-content-title">
+				Чтобы составить расписание нужно выбрать:
+			</div>
+			<div class="help-content-steps-box">
+				<div class="help-content-steps-box-item light-shadow" data-count="1">
+					Дни
+тренировок
+				</div>
+				<svg width="33" height="16" viewBox="0 0 33 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M32.7071 8.70711C33.0976 8.31658 33.0976 7.68342 32.7071 7.29289L26.3431 0.928932C25.9526 0.538408 25.3195 0.538408 24.9289 0.928932C24.5384 1.31946 24.5384 1.95262 24.9289 2.34315L30.5858 8L24.9289 13.6569C24.5384 14.0474 24.5384 14.6805 24.9289 15.0711C25.3195 15.4616 25.9526 15.4616 26.3431 15.0711L32.7071 8.70711ZM0 9H32V7H0V9Z" fill="#CEE8FA"/>
+					</svg>
+					
+				<div class="help-content-steps-box-item light-shadow" data-count="2">
+					Время
+тренировок
+				</div>
+				<svg width="33" height="16" viewBox="0 0 33 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M32.7071 8.70711C33.0976 8.31658 33.0976 7.68342 32.7071 7.29289L26.3431 0.928932C25.9526 0.538408 25.3195 0.538408 24.9289 0.928932C24.5384 1.31946 24.5384 1.95262 24.9289 2.34315L30.5858 8L24.9289 13.6569C24.5384 14.0474 24.5384 14.6805 24.9289 15.0711C25.3195 15.4616 25.9526 15.4616 26.3431 15.0711L32.7071 8.70711ZM0 9H32V7H0V9Z" fill="#CEE8FA"/>
+					</svg>
+					
+				<div class="help-content-steps-box-item light-shadow" data-count="3">
+					Выходной и
+дни заданий
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="help-popup-wrapper">
+		<div class="help-header">
+			<div class="help-header-breadcrumb">
+				<div class="help-header-breadcrumb-item">Тестирование</div>
+				<div class="help-header-breadcrumb-item active">Выбор <br/>
+					расписания</div>
+				<div class="help-header-breadcrumb-item">Тренировки</div>
+			</div>
+		</div>
+		<div class="help-content">
+			<div class="help-content-title">
+				Тренировка - видео, в котором я тренируюсь <br/>вместе с вами
+			</div>
+		<div class="help-content-row light-shadow">
+			<div class="row">
+				<div class="col-md-5">
+					<div class="icon-title-box">
+						<img src="img/_src/tools-and-utensils.svg" alt="">
+						<span>60 минут</span>
+					</div>
+				</div>
+				<div class="col-md-7">
+					<div class="icon-title-box">
+						<img src="img/_src/appointment.svg" alt="">
+						<span>3 раза в неделю</span>
+					</div>
+				</div>
+				<div class="col-md-5">
+					<div class="icon-title-box">
+						<img src="img/_src/clock2.svg" alt="">
+						<span>выбираете <br/>удобное время</span>
+					</div>
+				</div>
+				<div class="col-md-7">
+					<div class="icon-title-box">
+						<img src="img/_src/video-player.svg" alt="">
+						<span>доступ 2 часа - открывается 
+							за 30 минут до установленного в расписании времени</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+	<div class="help-popup-wrapper">
+		<div class="help-header">
+			<div class="help-header-breadcrumb">
+				<div class="help-header-breadcrumb-item">Тестирование</div>
+				<div class="help-header-breadcrumb-item active">Выбор <br/>
+					расписания</div>
+				<div class="help-header-breadcrumb-item">Тренировки</div>
+			</div>
+		</div>
+		<div class="help-content">
+			<div class="help-content-title">
+				Задание - видео с упражнениями с количеством <br/>раз/подходов
+			</div>
+			<div class="help-content-row row-wide light-shadow">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="icon-title-box">
+							<img src="img/_src/tools-and-utensils.svg" alt="">
+							<span>~ 10-20 минут</span>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="icon-title-box">
+							<img src="img/_src/appointment.svg" alt="">
+							<span>3 раза в неделю</span>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="icon-title-box">
+							<img src="img/_src/video-player.svg" alt="">
+							<span>доступ 24 часа</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="help-popup-wrapper">
+		<div class="help-header">
+			<div class="help-header-breadcrumb">
+				<div class="help-header-breadcrumb-item">Тестирование</div>
+				<div class="help-header-breadcrumb-item active">Выбор <br/>
+					расписания</div>
+				<div class="help-header-breadcrumb-item">Тренировки</div>
+			</div>
+		</div>
+		<div class="help-content">
+			<div class="help-content-title">
+				Выходной - время для восстановления и отдыха
+			</div>
+			<div class="help-content-row row-wide row-inline light-shadow">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="icon-title-box">
+							<img src="img/_src/appointment.svg" alt="">
+							<span>1 раз в неделю</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+</div><!-- <footer id="abc_footer">
+  <div class="footer_content">
+    <a href="#" class="footer_logo logo">
+      <img src="img/_src/ABC_logo.svg" alt="" class="logo_image">
+      <span>ART OF BODY CONTROL</span>
+    </a>
+    <div class="footer_social">
+      <a href="#"><img src="img/_src/instagram.svg" alt="" class="img-responsive"></a>
+      <a href="#"><img src="img/_src/facebook.svg" alt="" class="img-responsive"></a>
+      <a href="#"><img src="img/_src/youtube.svg" alt="" class="img-responsive"></a>
+    </div>
+  </div>
+</footer> -->
+<script src="js/scripts.min.js"></script>
+
+</body>
+</html>

@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<!-- <base href="/"> -->
 
-	<title>OptimizedHTML 4</title>
+	<title>ABC - Верстка</title>
 	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -32,7 +32,7 @@
 		<div class="abc_left_bar" id="left-bar">
 			<div class="profile_info">
 				<div class="profile_info__image">
-					<img src="img/_src/user.png" alt="">
+					<img src="img/_src/user.svg" alt="">
 				</div>
 				<div class="profile_info__name"><span>Татьяна</span></div>
 				<div class="profile_info__level">
@@ -119,6 +119,17 @@
 					</a>
 				</li>
 			</ul>
+			<div class="bottom-mobile-menu">
+				<a href="#help" class="bottom-mobile-menu-item help">
+					<img src="img/_src/faq.svg" alt="">
+				</a>
+				<a href="#" class="bottom-mobile-menu-item">
+					<img src="img/_src/coin.svg" alt="">
+				</a>
+				<a href="#" class="bottom-mobile-menu-item">
+					<img src="img/_src/settings.svg" alt="">
+				</a>
+			</div>
 		</div>
 		<div class="top-bar">
 			<div class="top-bar-mobile">
@@ -128,17 +139,18 @@
 					<span></span>
 				</div>
 				<a href="#" class="logo">
-					<img src="img/_src/ABC_logo.png" alt="">
+					<img src="img/_src/ABC_logo.svg" alt="">
 				</a>
 			</div>
+			
 			<a href="#" class="top-bar-link">
-				<img src="img/_src/faq.png" alt="">
+				<img src="img/_src/coin.svg" alt="">
+			</a>
+			<a href="#help" class="top-bar-link help">
+				<img src="img/_src/faq.svg" alt="">
 			</a>
 			<a href="#" class="top-bar-link">
-				<img src="img/_src/coin.png" alt="">
-			</a>
-			<a href="#" class="top-bar-link">
-				<img src="img/_src/settings.png" alt="">
+				<img src="img/_src/settings.svg" alt="">
 			</a>
 		</div>
 	</header>
@@ -148,38 +160,42 @@
 			<div class="step"></div>
 			<div class="step"></div>
 			<div class="step"></div>
+			<div class="step"></div>
 			<div class="colored-line"></div>
 		</div>
 		<section class="schedule text-center">
 			<div class="schedule-steps-wrapper">
-				<div class="prev step-schedule" style="visibility: hidden;">
-					<a href="#"><img src="img/_src/arrow-left.svg" alt="" class="img-responsive"></a>	
+				<div class="prev step-schedule" >
+					<a href="#"><svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M6.4955 0.191807L6.8913 0.584883C7.01491 0.708591 7.08301 0.873178 7.08301 1.04908C7.08301 1.22489 7.01491 1.38967 6.8913 1.51338L2.40717 5.99732L6.89628 10.4864C7.01989 10.6099 7.08789 10.7747 7.08789 10.9505C7.08789 11.1263 7.01989 11.2912 6.89628 11.4148L6.50291 11.808C6.2471 12.064 5.83042 12.064 5.57461 11.808L0.210567 6.46317C0.0870533 6.33966 2.81334e-05 6.17507 2.81334e-05 5.99771V5.99566C2.81334e-05 5.81975 0.0871511 5.65517 0.210567 5.53165L5.56007 0.191807C5.68359 0.0680981 5.85315 0.00019455 6.02896 0C6.20486 0 6.37208 0.0680981 6.4955 0.191807Z" fill="#2D527C"/>
+						</svg>
+						 Назад</a>	
 				</div>
 				<div class="step-schedule-title">
 					<h2 class="section-title small-title">Выберите дни тренировок</h1>
-					<h4 class="section-subtitle small-subtitle">на текущую неделю</h3>
+					<h4 class="section-subtitle small-subtitle">на текущую неделю</h4>
 					<p class="step-current">Шаг 1</p>
 				</div>
-				<div class="next step-schedule">
+				<!-- <div class="next step-schedule">
 					<a href="#"><img src="img/_src/arrow-right.svg" alt="" class="img-responsive"></a>
-				</div>
+				</div> -->
 			</div>
 				
 		</section>
 		<form class="select-week-form">
-			<input type="radio" name="schedule-week" id="" value="1">
+			<input type="radio" name="schedule-week" value="1">
 			<label for="">1</label>
-			<input type="radio" name="schedule-week" id="" value="2">
+			<input type="radio" name="schedule-week" value="2">
 			<label for="">2</label>
-			<input type="radio" name="schedule-week" id="" value="3">
+			<input type="radio" name="schedule-week" value="3">
 			<label for="">3</label>
-			<input type="radio" name="schedule-week" id="" value="4">
+			<input type="radio" name="schedule-week" value="4">
 			<label for="">4</label>
-			<input type="radio" name="schedule-week" id="" value="5">
+			<input type="radio" name="schedule-week" value="5">
 			<label for="">5</label>
-			<input type="radio" name="schedule-week" id="" value="6">
+			<input type="radio" name="schedule-week" value="6">
 			<label for="">6</label>
-			<input type="radio" name="schedule-week" id="" value="7">
+			<input type="radio" name="schedule-week" value="7">
 			<label for="">7</label>
 		</form>
 		<section class="schedule-boxes">
@@ -428,23 +444,171 @@
 					</div>
 				</div>
 			</div>
+			<p class="footnote">Т - Тренировка</p>
 		</section>
 		
 	</div>
 	
-</main><footer id="abc_footer">
+</main>
+<div id="help" class="mfp-hide help-popup">
+	<div class="help-popup-wrapper">
+		<div class="help-header">
+			<div class="help-header-breadcrumb">
+				<div class="help-header-breadcrumb-item">Тестирование</div>
+				<div class="help-header-breadcrumb-item active">Выбор <br/>
+					расписания</div>
+				<div class="help-header-breadcrumb-item">Тренировки</div>
+			</div>
+		</div>
+		<div class="help-content">
+			<div class="help-content-title">
+				Чтобы составить расписание нужно выбрать:
+			</div>
+			<div class="help-content-steps-box">
+				<div class="help-content-steps-box-item light-shadow" data-count="1">
+					Дни
+тренировок
+				</div>
+				<svg width="33" height="16" viewBox="0 0 33 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M32.7071 8.70711C33.0976 8.31658 33.0976 7.68342 32.7071 7.29289L26.3431 0.928932C25.9526 0.538408 25.3195 0.538408 24.9289 0.928932C24.5384 1.31946 24.5384 1.95262 24.9289 2.34315L30.5858 8L24.9289 13.6569C24.5384 14.0474 24.5384 14.6805 24.9289 15.0711C25.3195 15.4616 25.9526 15.4616 26.3431 15.0711L32.7071 8.70711ZM0 9H32V7H0V9Z" fill="#CEE8FA"/>
+					</svg>
+					
+				<div class="help-content-steps-box-item light-shadow" data-count="2">
+					Время
+тренировок
+				</div>
+				<svg width="33" height="16" viewBox="0 0 33 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M32.7071 8.70711C33.0976 8.31658 33.0976 7.68342 32.7071 7.29289L26.3431 0.928932C25.9526 0.538408 25.3195 0.538408 24.9289 0.928932C24.5384 1.31946 24.5384 1.95262 24.9289 2.34315L30.5858 8L24.9289 13.6569C24.5384 14.0474 24.5384 14.6805 24.9289 15.0711C25.3195 15.4616 25.9526 15.4616 26.3431 15.0711L32.7071 8.70711ZM0 9H32V7H0V9Z" fill="#CEE8FA"/>
+					</svg>
+					
+				<div class="help-content-steps-box-item light-shadow" data-count="3">
+					Выходной и
+дни заданий
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="help-popup-wrapper">
+		<div class="help-header">
+			<div class="help-header-breadcrumb">
+				<div class="help-header-breadcrumb-item">Тестирование</div>
+				<div class="help-header-breadcrumb-item active">Выбор <br/>
+					расписания</div>
+				<div class="help-header-breadcrumb-item">Тренировки</div>
+			</div>
+		</div>
+		<div class="help-content">
+			<div class="help-content-title">
+				Тренировка - видео, в котором я тренируюсь <br/>вместе с вами
+			</div>
+		<div class="help-content-row light-shadow">
+			<div class="row">
+				<div class="col-md-5">
+					<div class="icon-title-box">
+						<img src="img/_src/tools-and-utensils.svg" alt="">
+						<span>60 минут</span>
+					</div>
+				</div>
+				<div class="col-md-7">
+					<div class="icon-title-box">
+						<img src="img/_src/appointment.svg" alt="">
+						<span>3 раза в неделю</span>
+					</div>
+				</div>
+				<div class="col-md-5">
+					<div class="icon-title-box">
+						<img src="img/_src/clock2.svg" alt="">
+						<span>выбираете <br/>удобное время</span>
+					</div>
+				</div>
+				<div class="col-md-7">
+					<div class="icon-title-box">
+						<img src="img/_src/video-player.svg" alt="">
+						<span>доступ 2 часа - открывается 
+							за 30 минут до установленного в расписании времени</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+	<div class="help-popup-wrapper">
+		<div class="help-header">
+			<div class="help-header-breadcrumb">
+				<div class="help-header-breadcrumb-item">Тестирование</div>
+				<div class="help-header-breadcrumb-item active">Выбор <br/>
+					расписания</div>
+				<div class="help-header-breadcrumb-item">Тренировки</div>
+			</div>
+		</div>
+		<div class="help-content">
+			<div class="help-content-title">
+				Задание - видео с упражнениями с количеством <br/>раз/подходов
+			</div>
+			<div class="help-content-row row-wide light-shadow">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="icon-title-box">
+							<img src="img/_src/tools-and-utensils.svg" alt="">
+							<span>~ 10-20 минут</span>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="icon-title-box">
+							<img src="img/_src/appointment.svg" alt="">
+							<span>3 раза в неделю</span>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="icon-title-box">
+							<img src="img/_src/video-player.svg" alt="">
+							<span>доступ 24 часа</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="help-popup-wrapper">
+		<div class="help-header">
+			<div class="help-header-breadcrumb">
+				<div class="help-header-breadcrumb-item">Тестирование</div>
+				<div class="help-header-breadcrumb-item active">Выбор <br/>
+					расписания</div>
+				<div class="help-header-breadcrumb-item">Тренировки</div>
+			</div>
+		</div>
+		<div class="help-content">
+			<div class="help-content-title">
+				Выходной - время для восстановления и отдыха
+			</div>
+			<div class="help-content-row row-wide row-inline light-shadow">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="icon-title-box">
+							<img src="img/_src/appointment.svg" alt="">
+							<span>1 раз в неделю</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+</div><!-- <footer id="abc_footer">
   <div class="footer_content">
     <a href="#" class="footer_logo logo">
-      <img src="img/_src/ABC_logo.png" alt="" class="logo_image">
+      <img src="img/_src/ABC_logo.svg" alt="" class="logo_image">
       <span>ART OF BODY CONTROL</span>
     </a>
     <div class="footer_social">
-      <a href="#"><img src="img/_src/instagram.png" alt="" class="img-responsive"></a>
-      <a href="#"><img src="img/_src/facebook.png" alt="" class="img-responsive"></a>
-      <a href="#"><img src="img/_src/youtube.png" alt="" class="img-responsive"></a>
+      <a href="#"><img src="img/_src/instagram.svg" alt="" class="img-responsive"></a>
+      <a href="#"><img src="img/_src/facebook.svg" alt="" class="img-responsive"></a>
+      <a href="#"><img src="img/_src/youtube.svg" alt="" class="img-responsive"></a>
     </div>
   </div>
-</footer>
+</footer> -->
 <script src="js/scripts.min.js"></script>
 
 </body>

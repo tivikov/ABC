@@ -11,7 +11,7 @@
 							<h1 class="section-title">Тренировка</h1>
 						</div>
 						<div class="col-md-4 text-right order-md-3 hidden-mobile">
-						<a href="#">Перенести тренировку</a></div>
+						<a href="#over-train" class="open-default-popup">Перенести тренировку</a></div>
 					</div>
 				</div>
 			</div>
@@ -35,6 +35,23 @@
 					</span>
 				</label>
 			</div>
-			<a href="#" class="hidden-desktop">Перенести тренировку</a>
+			<a href="#over-train" class="hidden-desktop open-default-popup">Перенести тренировку</a>
 		</div>
 	</main>
+<div id="over-train" class="default-popup mfp-hide light-shadow text-center">
+	<div class="popup-header">Перенести тренировку</div>
+	<div class="popup-content">
+		<div class="mid-text">Выберите новое время для тренировки:</div>
+		<div class="select-time-widget">
+			<input type="text" class="select-time__item-input" data-default="12:00" readonly="readonly" data-autoclose="true">
+		</div>
+		<div class="popup-notice-box light-shadow">
+			Перенести тренировку можно только 1 раз в день
+		</div>
+		
+		
+		<div class="button-wrapper text-center margin-20">
+			<a href="#" class="button button-rounded apply-close">Перенести</a>
+		</div>
+	</div>
+</div>
